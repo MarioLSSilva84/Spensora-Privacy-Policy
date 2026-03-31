@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Spendora</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1B6B3F;
+            --primary-container: #D1E8D5;
+            --surface: #F8F9FA;
+            --on-surface: #1A1C1E;
+            --on-surface-variant: #44474E;
+            --outline: #74777F;
+            --card-bg: #FFFFFF;
+        }
+        body { font-family: 'Inter', sans-serif; background-color: var(--surface); color: var(--on-surface); line-height: 1.6; margin: 0; padding: 0; }
+        header { background-color: var(--card-bg); padding: 20px; text-align: center; border-bottom: 1px solid var(--primary-container); position: sticky; top: 0; z-index: 100; }
+        header h1 { margin: 0; font-weight: 800; color: var(--primary); letter-spacing: -1px; }
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; min-height: 600px; }
+        .card { background: var(--card-bg); padding: 32px; border-radius: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 24px; }
+        h2 { color: var(--primary); font-weight: 700; margin-top: 0; display: flex; align-items: center; gap: 10px; font-size: 20px; }
+        h2::before { content: ""; width: 4px; height: 24px; background-color: var(--primary); border-radius: 2px; }
+        p, li { color: var(--on-surface-variant); font-size: 15px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .footer { text-align: center; padding: 40px; color: var(--outline); font-size: 14px; }
+        .badge { display: inline-block; background-color: var(--primary-container); color: var(--primary); padding: 4px 12px; border-radius: 8px; font-weight: 600; font-size: 12px; margin-bottom: 16px; }
+        .lang-selector { margin-bottom: 20px; text-align: right; }
+        select { padding: 8px 16px; border-radius: 12px; border: 1px solid var(--outline); background: white; cursor: pointer; }
+        .lang-content { display: none; }
+        .active-lang { display: block !important; animation: fadeIn 0.4s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 600px) { .card { padding: 24px; } }
+    </style>
+</head>
+<body>
+    <header><h1>Spendora</h1></header>
+    <div class="container">
+        <div class="lang-selector">
+            <select id="languagePicker" onchange="changeLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="ko">한국어</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+            </select>
+        </div>
+
+        <!-- PORTUGUÊS -->
+        <div id="content-pt" class="lang-content">
+            <div class="badge">Última atualização: Maio 2024</div>
+            <div class="card">
+                <h2>Introdução</h2>
+                <p>A sua privacidade é uma prioridade para o <strong>Spendora</strong>. Esta política explica como lidamos com os seus dados, garantindo transparência e segurança enquanto utiliza a nossa aplicação de gestão financeira.</p>
+            </div>
+            <div class="card">
+                <h2>Dados Armazenados Localmente</h2>
+                <p>O Spendora foi desenhado para funcionar prioritariamente de forma offline. Os seguintes dados são armazenados exclusivamente no seu dispositivo (via base de dados Room):</p>
+                <ul>
+                    <li>Listas de compras e produtos criados.</li>
+                    <li>Histórico de compras e valores introduzidos.</li>
+                    <li>Estatísticas de gastos calculadas localmente.</li>
+                </ul>
+                <p><strong>Nota:</strong> Nós não temos acesso a estes dados. Se apagar a aplicação ou limpar os dados do telemóvel, estas informações serão removidas permanentemente.</p>
+            </div>
+            <div class="card">
+                <h2>Serviços de Terceiros</h2>
+                <p>Para fornecer funcionalidades específicas, utilizamos os seguintes serviços que podem recolher dados conforme as suas próprias políticas:</p>
+                <ul>
+                    <li><strong>Google Play Services / Samsung IAP:</strong> Utilizados para processar a subscrição Premium. Estes serviços gerem os seus dados de pagamento de forma segura.</li>
+                    <li><strong>Google AdMob:</strong> Na versão gratuita, podem ser exibidos anúncios. A Google pode utilizar identificadores de publicidade para personalizar a experiência.</li>
+                    <li><strong>Preferências do Utilizador:</strong> Utilizamos o Android DataStore para guardar se é um utilizador Premium ou as suas preferências de idioma.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Segurança</h2>
+                <p>Visto que os seus dados financeiros sensíveis permanecem no seu dispositivo, a segurança dos mesmos depende da proteção do seu próprio telemóvel (PIN, Biometria, etc.). Recomendamos que mantenha o sistema operativo atualizado.</p>
+            </div>
+            <div class="card">
+                <h2>Contacto</h2>
+                <p>Se tiver alguma dúvida sobre esta Política de Privacidade, pode contactar-nos através do e-mail de suporte disponível na loja de aplicações.</p>
+            </div>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="content-en" class="lang-content">
+            <div class="badge">Last update: May 2024</div>
+            <div class="card">
+                <h2>Introduction</h2>
+                <p>Your privacy is a priority for <strong>Spendora</strong>. This policy explains how we handle your data, ensuring transparency and security while using our financial management app.</p>
+            </div>
+            <div class="card">
+                <h2>Locally Stored Data</h2>
+                <p>Spendora is designed to work primarily offline. The following data is stored exclusively on your device (via Room database):</p>
+                <ul>
+                    <li>Shopping lists and created products.</li>
+                    <li>Purchase history and entered values.</li>
+                    <li>Spending statistics calculated locally.</li>
+                </ul>
+                <p><strong>Note:</strong> We do not have access to this data. If you delete the app or clear your phone data, this information will be permanently removed.</p>
+            </div>
+            <div class="card">
+                <h2>Third-Party Services</h2>
+                <p>To provide specific features, we use the following services that may collect data according to their own policies:</p>
+                <ul>
+                    <li><strong>Google Play Services / Samsung IAP:</strong> Used to process the Premium subscription. These services handle your payment data securely.</li>
+                    <li><strong>Google AdMob:</strong> In the free version, ads may be displayed. Google may use advertising identifiers to personalize the experience.</li>
+                    <li><strong>User Preferences:</strong> We use Android DataStore to save whether you are a Premium user or your language preferences.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Security</h2>
+                <p>Since your sensitive financial data remains on your device, its security depends on the protection of your own phone (PIN, Biometrics, etc.). We recommend keeping your operating system up to date.</p>
+            </div>
+            <div class="card">
+                <h2>Contact</h2>
+                <p>If you have any questions about this Privacy Policy, you can contact us through the support email available in the app store.</p>
+            </div>
+        </div>
+
+        <!-- ESPAÑOL -->
+        <div id="content-es" class="lang-content">
+            <div class="badge">Última actualización: Mayo 2024</div>
+            <div class="card">
+                <h2>Introducción</h2>
+                <p>Su privacidad es una prioridad para <strong>Spendora</strong>. Esta política explica cómo manejamos sus datos, garantizando transparencia y seguridad mientras utiliza nuestra aplicación de gestión financiera.</p>
+            </div>
+            <div class="card">
+                <h2>Datos Almacenados Localmente</h2>
+                <p>Spendora está diseñado para funcionar principalmente sin conexión. Los siguientes datos se almacenan exclusivamente en su dispositivo (a través de la base de datos Room):</p>
+                <ul>
+                    <li>Listas de compras y productos creados.</li>
+                    <li>Historial de compras y valores introducidos.</li>
+                    <li>Estadísticas de gastos calculadas localmente.</li>
+                </ul>
+                <p><strong>Nota:</strong> No tenemos acceso a estos datos. Si elimina la aplicación o borra los datos del teléfono, esta información se eliminará de forma permanente.</p>
+            </div>
+            <div class="card">
+                <h2>Servicios de Terceros</h2>
+                <p>Para proporcionar funciones específicas, utilizamos los siguientes servicios que pueden recopilar datos de acuerdo con sus propias políticas:</p>
+                <ul>
+                    <li><strong>Google Play Services / Samsung IAP:</strong> Utilizados para procesar la suscripción Premium. Estos servicios gestionan sus datos de pago de forma segura.</li>
+                    <li><strong>Google AdMob:</strong> En la versión gratuita, se pueden mostrar anuncios. Google puede utilizar identificadores de publicidad para personalizar la experiencia.</li>
+                    <li><strong>Preferencias del Usuario:</strong> Utilizamos Android DataStore para guardar si es un usuario Premium o sus preferencias de idioma.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Seguridad</h2>
+                <p>Dado que sus datos financieros confidenciales permanecen en su dispositivo, su seguridad depende de la protección de su propio teléfono (PIN, biometría, etc.). Recomendamos mantener actualizado el sistema operativo.</p>
+            </div>
+            <div class="card">
+                <h2>Contacto</h2>
+                <p>Si tiene alguna pregunta sobre esta Política de privacidad, puede contactarnos a través del correo electrónico de soporte disponible en la tienda de aplicaciones.</p>
+            </div>
+        </div>
+
+        <!-- FRANÇAIS -->
+        <div id="content-fr" class="lang-content">
+            <div class="badge">Dernière mise à jour : Mai 2024</div>
+            <div class="card">
+                <h2>Introduction</h2>
+                <p>Votre vie privée est une priorité pour <strong>Spendora</strong>. Cette politique explique comment nous traitons vos données, garantissant transparence et sécurité lors de l'utilisation de notre application de gestion financière.</p>
+            </div>
+            <div class="card">
+                <h2>Données Stockées Localement</h2>
+                <p>Spendora est conçu pour fonctionner principalement hors ligne. Les données suivantes sont stockées exclusivement sur votre appareil (via la base de données Room) :</p>
+                <ul>
+                    <li>Listes de courses et produits créés.</li>
+                    <li>Historique des achats et valeurs saisies.</li>
+                    <li>Statistiques de dépenses calculées localement.</li>
+                </ul>
+                <p><strong>Remarque :</strong> Nous n'avons pas accès à ces données. Si vous supprimez l'application ou effacez les données du téléphone, ces informations seront définitivement supprimées.</p>
+            </div>
+            <div class="card">
+                <h2>Services Tiers</h2>
+                <p>Pour fournir des fonctionnalités spécifiques, nous utilisons les services suivants qui peuvent collecter des données selon leurs propres politiques :</p>
+                <ul>
+                    <li><strong>Google Play Services / Samsung IAP :</strong> Utilisés pour traiter l'abonnement Premium. Ces services gèrent vos données de paiement en toute sécurité.</li>
+                    <li><strong>Google AdMob :</strong> Dans la version gratuite, des publicités peuvent être affichées. Google peut utiliser des identifiants publicitaires pour personnaliser l'expérience.</li>
+                    <li><strong>Préférences Utilisateur :</strong> Nous utilisons Android DataStore pour enregistrer si vous êtes un utilisateur Premium ou vos préférences linguistiques.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Sécurité</h2>
+                <p>Puisque vos données financières sensibles restent sur votre appareil, leur sécurité dépend de la protection de votre propre téléphone (PIN, biométrie, etc.). Nous vous recommandons de maintenir votre système d'exploitation à jour.</p>
+            </div>
+            <div class="card">
+                <h2>Contact</h2>
+                <p>Si vous avez des questions sur cette politique de confidentialité, vous pouvez nous contacter via l'e-mail d'assistance disponible dans le magasin d'applications.</p>
+            </div>
+        </div>
+
+        <!-- KOREAN -->
+        <div id="content-ko" class="lang-content">
+            <div class="badge">마지막 업데이트: 2024년 5월</div>
+            <div class="card">
+                <h2>소개</h2>
+                <p>사용자의 개인정보 보호는 <strong>Spendora</strong>의 최우선 과제입니다. 이 정책은 금융 관리 앱을 사용하는 동안 투명성과 보안을 보장하면서 데이터를 처리하는 방법을 설명합니다.</p>
+            </div>
+            <div class="card">
+                <h2>로컬 데이터 저장</h2>
+                <p>Spendora는 기본적으로 오프라인에서 작동하도록 설계되었습니다. 다음 데이터는 사용자의 기기에만 독점적으로 저장됩니다 (Room 데이터베이스 이용):</p>
+                <ul>
+                    <li>쇼핑 목록 및 생성된 제품.</li>
+                    <li>구매 내역 및 입력된 값.</li>
+                    <li>로컬에서 계산된 지출 통계.</li>
+                </ul>
+                <p><strong>참고:</strong> 당사는 이 데이터에 접근할 수 없습니다. 앱을 삭제하거나 휴대폰 데이터를 지우면 이 정보는 영구적으로 삭제됩니다.</p>
+            </div>
+            <div class="card">
+                <h2>제3자 서비스</h2>
+                <p>특정 기능을 제공하기 위해 자체 정책에 따라 데이터를 수집할 수 있는 다음 서비스를 사용합니다:</p>
+                <ul>
+                    <li><strong>Google Play Services / Samsung IAP:</strong> 프리미엄 구독 처리에 사용됩니다. 이 서비스는 결제 데이터를 안전하게 관리합니다.</li>
+                    <li><strong>Google AdMob:</strong> 무료 버전에서는 광고가 표시될 수 있습니다. Google은 광고 식별자를 사용하여 환경을 맞춤설정할 수 있습니다.</li>
+                    <li><strong>사용자 설정:</strong> Android DataStore를 사용하여 프리미엄 사용자 여부 또는 언어 설정을 저장합니다.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>보안</h2>
+                <p>민감한 금융 데이터는 기기에 남아 있으므로 보안은 휴대폰 자체의 보호(PIN, 생체 인식 등)에 달려 있습니다. 운영 체제를 최신 상태로 유지하는 것이 좋습니다.</p>
+            </div>
+            <div class="card">
+                <h2>문의하기</h2>
+                <p>이 개인정보 보호정책에 대해 질문이 있는 경우 앱 스토어에 제공된 지원 이메일을 통해 문의할 수 있습니다.</p>
+            </div>
+        </div>
+
+        <!-- JAPANESE -->
+        <div id="content-ja" class="lang-content">
+            <div class="badge">最終更新日：2024年5月</div>
+            <div class="card">
+                <h2>はじめに</h2>
+                <p>お客様のプライバシーは <strong>Spendora</strong> の最優先事項です。このポリシーは、当社の財務管理アプリの使用中に透明性とセキュリティを確保しながら、データをどのように扱うかを説明するものです。</p>
+            </div>
+            <div class="card">
+                <h2>ローカルに保存されるデータ</h2>
+                <p>Spendoraは主にオフラインで動作するように設計されています。以下のデータは、お客様の端末にのみ保存されます（Roomデータベース経由）：</p>
+                <ul>
+                    <li>買い物リストと作成された製品。</li>
+                    <li>購入履歴と入力された値。</li>
+                    <li>ローカルで計算された支出統計。</li>
+                </ul>
+                <p><strong>注意：</strong>当社はこれらのデータにアクセスできません。アプリを削除したり端末のデータを消去したりすると、これらの情報は永久に削除されます。</p>
+            </div>
+            <div class="card">
+                <h2>サードパーティサービス</h2>
+                <p>特定の機能を提供するために、独自のポリシーに従ってデータを収集する可能性のある以下のサービスを使用しています：</p>
+                <ul>
+                    <li><strong>Google Play Services / Samsung IAP：</strong>プレミアムサブスクリプションの処理に使用されます。これらのサービスはお客様の支払いデータを安全に管理します。</li>
+                    <li><strong>Google AdMob：</strong>無料版では広告が表示される場合があります。Googleは広告識別子を使用してエクスペリエンスをカスタマイズする場合があります。</li>
+                    <li><strong>ユーザー設定：</strong>Android DataStoreを使用して、プレミアムユーザーであるかや言語設定を保存します。</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>セキュリティ</h2>
+                <p>機密性の高い財務データは端末に残るため、そのセキュリティはお客様自身の電話の保護（PIN、生体認証など）に依存します。オペレーティングシステムを最新の状態に保つことをお勧めします。</p>
+            </div>
+            <div class="card">
+                <h2>お問い合わせ</h2>
+                <p>このプライバシーポリシーについて質問がある場合は、アプリストアで利用可能なサポートメールを通じてお問い合わせください。</p>
+            </div>
+        </div>
+
+        <!-- CHINESE -->
+        <div id="content-zh" class="lang-content">
+            <div class="badge">最后更新：2024年5月</div>
+            <div class="card">
+                <h2>简介</h2>
+                <p>您的隐私是 <strong>Spendora</strong> 的首要任务。本政策解释了我们在您使用财务管理应用时如何处理您的数据，确保透明度和安全性。</p>
+            </div>
+            <div class="card">
+                <h2>本地存储的数据</h2>
+                <p>Spendora 旨在主要以离线方式运行。以下数据仅存储在您的设备上（通过 Room 数据库）：</p>
+                <ul>
+                    <li>购物清单和创建的产品。</li>
+                    <li>购买历史和输入的值。</li>
+                    <li>本地计算的支出统计。</li>
+                </ul>
+                <p><strong>注意：</strong> 我们无法访问这些数据。如果您删除应用或清除手机数据，这些信息将被永久删除。</p>
+            </div>
+            <div class="card">
+                <h2>第三方服务</h2>
+                <p>为了提供特定功能，我们使用以下可能根据其自身政策收集数据的服务：</p>
+                <ul>
+                    <li><strong>Google Play Services / Samsung IAP:</strong> 用于处理高级版订阅。这些服务安全地管理您的付款数据。</li>
+                    <li><strong>Google AdMob:</strong> 免费版本中可能会显示广告。Google 可能会使用广告标识符来个性化体验。</li>
+                    <li><strong>用户偏好:</strong> 我们使用 Android DataStore 来保存您是否为高级用户或您的语言偏好。</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>安全</h2>
+                <p>由于您的敏感财务数据保留在您的设备上，其安全性取决于您手机自身的保护（密码、生物识别等）。我们建议您保持操作系统为最新版本。</p>
+            </div>
+            <div class="card">
+                <h2>联系我们</h2>
+                <p>如果您对本隐私政策有任何疑问，可以通过应用商店中提供的支持电子邮件与我们联系。</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function changeLanguage(lang) {
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active-lang'));
+            let target = document.getElementById('content-' + lang);
+            if (!target) {
+                if (lang.startsWith('zh')) target = document.getElementById('content-zh');
+                else if (lang.startsWith('pt')) target = document.getElementById('content-pt');
+                else target = document.getElementById('content-en');
+            }
+            target.classList.add('active-lang');
+            document.getElementById('languagePicker').value = target.id.replace('content-', '');
+        }
+        const userLang = (navigator.language || navigator.userLanguage).substring(0, 2);
+        changeLanguage(userLang);
+    </script>
+    <div class="footer">&copy; 2026 Spendora - Gestão Financeira Inteligente.</div>
+</body>
+</html>
