@@ -1,2 +1,2 @@
 # Spendora-Privacy-Policy
-Página Spendora Privacy Policy para a app Spensora.
+Página Spendora Privacy Policy para a app Spendora.
